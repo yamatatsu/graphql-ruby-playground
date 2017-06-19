@@ -28,10 +28,5 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  has_many :followings
-  has_many :purchases
-
-  def followers
-    User.where(followings.pluck(:follower_id))
-  end
+  has_many :shops
 end

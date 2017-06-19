@@ -1,18 +1,18 @@
 # == Schema Information
 #
-# Table name: items
+# Table name: shop_sites
 #
 #  id         :integer          not null, primary key
-#  name       :string(255)
+#  url        :string(255)
 #  shop_id    :integer
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
 # Indexes
 #
-#  index_items_on_shop_id  (shop_id)
+#  index_shop_sites_on_shop_id  (shop_id)
 #
 
-class Item < ApplicationRecord
+class ShopSite < ApplicationRecord
   belongs_to :shop
 end

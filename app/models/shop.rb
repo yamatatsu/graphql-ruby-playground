@@ -1,19 +1,20 @@
 # == Schema Information
 #
-# Table name: purchases
+# Table name: shops
 #
 #  id         :integer          not null, primary key
+#  name       :string(255)
 #  user_id    :integer
-#  item_id    :integer
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
 # Indexes
 #
-#  index_purchases_on_item_id  (item_id)
-#  index_purchases_on_user_id  (user_id)
+#  index_shops_on_user_id  (user_id)
 #
 
-class Purchase < ApplicationRecord
-  belongs_to :item
+class Shop < ApplicationRecord
+  belongs_to :user
+  has_one :shop_site
+  has_many :items
 end
