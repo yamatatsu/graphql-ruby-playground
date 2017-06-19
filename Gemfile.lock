@@ -49,6 +49,9 @@ GEM
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.2.3)
+    bullet (5.5.1)
+      activesupport (>= 3.0.0)
+      uniform_notifier (~> 1.10.0)
     byebug (9.0.6)
     capybara (2.14.3)
       addressable
@@ -84,6 +87,9 @@ GEM
     graphiql-rails (1.4.2)
       rails
     graphql (1.6.3)
+    graphql-batch (0.3.3)
+      graphql (>= 0.8, < 2)
+      promise.rb (~> 0.7.2)
     i18n (0.8.4)
     jbuilder (2.7.0)
       activesupport (>= 4.2.0)
@@ -108,6 +114,7 @@ GEM
     nokogiri (1.8.0)
       mini_portile2 (~> 2.2.0)
     orm_adapter (0.5.0)
+    promise.rb (0.7.3)
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -199,6 +206,7 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
+    uniform_notifier (1.10.0)
     warden (1.2.7)
       rack (>= 1.0)
     web-console (3.5.1)
@@ -217,12 +225,14 @@ PLATFORMS
 
 DEPENDENCIES
   annotate
+  bullet
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
   devise
   graphiql-rails
   graphql
+  graphql-batch
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   mysql2 (>= 0.3.18, < 0.5)

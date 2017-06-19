@@ -34,10 +34,12 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'graphql'
+gem 'graphql-batch'
 gem 'devise'
 gem 'seed-fu', '~> 2.3'
 gem 'annotate'
 gem "rails-erd"
+gem 'bullet'
 
 # pry
 gem 'pry', require: false
