@@ -35,6 +35,15 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'graphql'
 gem 'devise'
+gem 'seed-fu', '~> 2.3'
+gem 'annotate'
+gem "rails-erd"
+
+# pry
+gem 'pry', require: false
+gem 'pry-byebug', require: false
+gem 'pry-rails', require: 'pry-rails/console'
+gem 'pry-stack_explorer', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
