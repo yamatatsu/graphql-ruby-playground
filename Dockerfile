@@ -6,10 +6,10 @@ RUN apk add --update --no-cache \
   ttf-freefont
 
 # bundle install
-# WORKDIR /tmp
-# COPY Gemfile /tmp
-# COPY Gemfile.lock /tmp
-# RUN bundle install
+WORKDIR /tmp
+COPY Gemfile /tmp
+COPY Gemfile.lock /tmp
+RUN bundle install
 
 # workdir作成
 ENV APP_HOME /myapp
