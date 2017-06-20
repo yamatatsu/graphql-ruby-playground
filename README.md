@@ -10,8 +10,8 @@ rails db:seed_fu
 
 # ログイン
 http://localhost:3000/users/sign_in
-yama@ta.tsu
-password
+- id: yama@ta.tsu
+- pass: password
 
 # graphiQL
 http://localhost:3000/graphiql
