@@ -40,6 +40,7 @@ gem 'seed-fu', '~> 2.3'
 gem 'annotate'
 gem "rails-erd"
 gem 'bullet'
+gem 'rspec-rails'
 
 # pry
 gem 'pry', require: false
